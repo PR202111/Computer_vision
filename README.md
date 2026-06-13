@@ -27,6 +27,12 @@ The goal of this project is to deeply understand the evolution of convolutional 
 - Regularization techniques
 - Transfer learning strategies
 
+## OCR & Text Detection modules
+
+- DBNet (text detector) — implementation and pretrained weights are available under `DBNet/`. This repository includes a `dbnet_icdar_best.pth` checkpoint that the `OCR` pipeline uses for text localization.
+- CRNN (text recognizer) — recognition model and training/inference notebooks are in `CRNN/` (see `CRNN/README.md`).
+- OCR pipeline — end-to-end detection + recognition notebooks are in `OCR/` and demonstrate DBNet -> crop -> CRNN flow.
+
 ---
 
 ## Research Motivation
